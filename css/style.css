@@ -870,7 +870,7 @@ nav {
 .newsletter__content::before {
   content: "";
   position: absolute;
-  background-image: url("/img/arrow-newsletter.svg");
+  background-image: url("../img/arrow-newsletter.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
