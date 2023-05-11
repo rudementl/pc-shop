@@ -647,11 +647,12 @@ nav {
   right: -18%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-image: url("/img/arrow-right-btn.svg");
+  background-image: url("../img/arrow-right-btn.svg");
   background-position: center center;
   background-size: cover;
   width: 56px;
   height: 56px;
+  cursor: pointer;
 }
 
 .section__service {
@@ -714,7 +715,7 @@ nav {
   line-height: 125%;
   color: #ffffff;
   margin-bottom: 16px;
-  max-width: 130px;
+  max-width: 135px;
 }
 
 .service__subtitle {
@@ -863,6 +864,20 @@ nav {
 .newsletter__content {
   width: 380px;
   height: 560px;
+  position: relative;
+}
+
+.newsletter__content::before {
+  content: "";
+  position: absolute;
+  background-image: url("/img/arrow-newsletter.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 99px;
+  height: 84px;
+  right: 120px;
+  top: -100px;
 }
 
 .newsletter__title {
