@@ -1066,7 +1066,7 @@ form {
   width: 349px;
   height: 349px;
   z-index: -1;
-  bottom: -260%;
+  bottom: -250%;
   left: 40%;
   transform: translate(-50%, -50%);
 }
@@ -1225,6 +1225,10 @@ form {
 @media (max-width: 767.98px) {
   .container {
     max-width: 740px;
+  }
+
+  .footer__gradient--yellow {
+    display: none;
   }
 
   .navbar__actions {
@@ -1427,6 +1431,9 @@ form {
   .location {
     margin-left: 10px;
     margin-bottom: 82px;
+  }
+  .footer__gradient--blue {
+    display: none;
   }
   .content {
     padding-left: 0;
