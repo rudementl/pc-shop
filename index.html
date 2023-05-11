@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PC Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body class="main__body">
+    <!-- Header -->
+    <header>
+      <!-- Navbar -->
+      <nav>
+        <div class="container">
+          <div class="navbar">
+            <div class="logo">
+              <a href="#!">
+                <svg
+                  width="96"
+                  height="96"
+                  viewBox="0 0 96 96"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M92.25 77.736C91.866 76.106 91.288 74.5 90.412 73.044C88.67 70.112 86.014 67.874 83.224 66.066C80.406 64.264 77.392 62.818 74.308 61.628C68.402 59.346 68.688 59.422 64.702 58C55.87 54.852 50.966 50.172 50.658 45.096C50.51 42.638 52.91 34.628 62.806 36.532C65.156 36.984 67.38 37.618 69.57 38.606C71.588 39.518 77.478 42.374 79.542 46.44C79.698 48.234 80.33 48.928 82.854 50.12C84.752 51.016 86.668 51.99 86.84 54.198C86.85 54.318 86.942 54.416 87.102 54.44C87.206 54.44 87.302 54.378 87.344 54.278C87.708 53.4 89.174 52.3 90.266 52.6C90.392 52.632 90.504 52.582 90.562 52.478C90.622 52.374 90.602 52.246 90.52 52.162L88.794 50.454C88.172 49.834 87.492 49.012 86.916 47.956C86.76 47.672 86.626 47.392 86.508 47.122C86.432 46.934 86.356 46.748 86.28 46.56C84.832 42.77 82.134 38.71 79.35 36.08C77.838 34.626 76.174 33.346 74.4 32.254C72.618 31.178 70.762 30.222 68.734 29.65L68.586 30.162C70.48 30.816 72.252 31.86 73.91 33C75.566 34.158 77.096 35.486 78.456 36.958C80.398 39.022 81.928 41.418 83.02 43.982L79.034 39.028L79.144 40.744L75.878 37.062L76.08 38.786L72.908 36.228L73.18 37.396C72.466 36.924 66.13 34.404 62.968 33.216C59.806 32.028 53.558 26.168 55.36 18.752C55.36 18.752 52.406 17.604 50.29 16.822C48.204 16.07 46.11 15.388 44.01 14.73C39.81 13.414 35.586 12.214 31.34 11.094C27.094 9.97998 22.82 8.96998 18.522 8.07798C14.222 7.19598 9.89802 6.40998 5.52202 5.97198L5.44402 6.63798C9.75002 7.29998 14 8.30399 18.218 9.40199C22.434 10.512 26.622 11.734 30.776 13.06C34.928 14.39 39.054 15.8 43.13 17.316C45.166 18.074 47.196 18.854 49.184 19.692C49.606 19.868 50.036 20.052 50.466 20.236C48.018 19.754 45.57 19.372 43.12 19.054C38.698 18.492 34.272 18.138 29.842 17.938C25.414 17.738 20.982 17.706 16.558 17.87C12.136 18.042 7.71202 18.388 3.34802 19.136L3.43402 19.744C7.79402 19.296 12.184 19.252 16.56 19.378C20.938 19.512 25.308 19.84 29.654 20.332C33.998 20.824 38.324 21.466 42.592 22.304C45.224 22.826 47.84 23.432 50.398 24.146C48.376 23.944 46.364 23.892 44.37 23.916C40.416 23.976 36.518 24.41 32.674 25.064C28.83 25.724 25.038 26.61 21.324 27.756C17.622 28.914 13.962 30.29 10.602 32.254L10.834 32.67C14.274 31.014 17.97 29.954 21.686 29.112C25.41 28.284 29.188 27.716 32.974 27.376C36.756 27.04 40.558 26.928 44.3 27.174C47.628 27.394 50.934 27.9 53.96 28.872C54.09 29.762 54.692 31.564 54.982 32.464C46.472 36.378 45.394 43.418 46.09 47.194C46.908 51.622 50.112 54.998 53.898 57.184C57.032 58.966 60.234 60.102 63.35 61.278C66.46 62.444 69.54 63.564 72.284 65.114C74.988 66.608 77.236 68.916 79.066 71.534C82.74 76.81 84.21 83.462 84.65 90.024L85.38 90.004C85.396 83.358 84.44 76.4 80.876 70.38C79.7 68.408 78.248 66.538 76.534 64.914C78.518 65.682 80.456 66.55 82.308 67.58C85.054 69.138 87.642 71.078 89.404 73.682C90.292 74.976 90.914 76.432 91.37 77.948C91.774 79.482 91.96 81.078 92.028 82.69H92.652C92.674 81.044 92.582 79.38 92.25 77.736Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
+            <ul class="menu">
+              <li class="menu__item">
+                <a href="#!" class="menu__item-link">Home</a>
+              </li>
+              <li class="menu__item">
+                <a href="#!" class="menu__item-link">Despre noi</a>
+              </li>
+              <li class="menu__item">
+                <a href="#!" class="menu__item-link">Produse</a>
+              </li>
+              <li class="menu__item">
+                <a href="#!" class="menu__item-link">Noutati</a>
+              </li>
+              <li class="menu__item">
+                <a href="#!" class="menu__item-link">Contacte</a>
+              </li>
+            </ul>
+            <div class="navbar__actions">
+              <a href="#!">
+                <img src="../img/search-icon.svg" alt="search icon" / width="48"
+                height="48">
+              </a>
+              <a href="#!">
+                <img src="../img/bag-icon.svg" alt="shopping bag icon" /
+                width="48" height="48">
+              </a>
+            </div>
+            <div class="burger">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Main Page -->
+    <main>
+      <div class="container">
+        <div class="section__hero">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="content">
+                  <div class="content__left">
+                    <div class="content__left-subtitle">Online Magazin</div>
+                    <h1 class="content__left-title">de produse electronice</h1>
+                    <div class="location">
+                      <a href="#!" class="location__info">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M17.5 8.33333C17.5 14.1667 10 19.1667 10 19.1667C10 19.1667 2.5 14.1667 2.5 8.33333C2.5 6.34421 3.29018 4.43656 4.6967 3.03003C6.10322 1.62351 8.01088 0.833333 10 0.833333C11.9891 0.833333 13.8968 1.62351 15.3033 3.03003C16.7098 4.43656 17.5 6.34421 17.5 8.33333Z"
+                            stroke="#111418"
+                            stroke-width="1.66667"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M10 10.8333C11.3807 10.8333 12.5 9.71405 12.5 8.33333C12.5 6.95262 11.3807 5.83333 10 5.83333C8.61929 5.83333 7.5 6.95262 7.5 8.33333C7.5 9.71405 8.61929 10.8333 10 10.8333Z"
+                            stroke="#111418"
+                            stroke-width="1.66667"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        în Moldova</a
+                      >
+                    </div>
+                    <a class="mousewheel" href="#!">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          x="4"
+                          y="1"
+                          width="12"
+                          height="18"
+                          rx="6"
+                          stroke="white"
+                          stroke-width="1.67"
+                        />
+                        <path
+                          d="M10 6V9"
+                          stroke="white"
+                          stroke-width="1.67"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                      Deruleaza in jos
+                    </a>
+                  </div>
+                  <div class="content__right">
+                    <div class="iphone__image">
+                      <img src="./img/iphone-12-mini.svg" alt="iphone 12" />
+                    </div>
+                    <div class="block">
+                      <div class="block__header">
+                        <div class="block__header-title">
+                          Apple iPhone 12 Mini
+                        </div>
+                      </div>
+                      <div class="block__middle">
+                        <div class="left-content">
+                          <div class="display">Display</div>
+                          <div class="display__info">6.1" OLED</div>
+                          <div class="memorie">Memorie internă</div>
+                          <div class="memorie__info">128 GB</div>
+                        </div>
+                        <div class="right-content">
+                          <div class="refresh">Refresh rate</div>
+                          <div class="refresh__info">120 Hz</div>
+                          <div class="ram">RAM</div>
+                          <div class="ram__info">6 GB</div>
+                        </div>
+                      </div>
+                      <div class="block__footer">
+                        <div class="block__footer-actions">
+                          <a href="#!" class="btn-fill">
+                            <img
+                              src="../img/shopping-bag.svg"
+                              alt="shopping-bag"
+                            />
+                            Cumpără acum
+                          </a>
+                        </div>
+                        <div class="block__footer-actions">
+                          <a href="#!" class="btn-outline">
+                            Află mai multe
+                            <img
+                              src="../img/arrow-right.svg"
+                              alt="arrow-right"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <div class="content__left">
+                    <div class="content__left-subtitle">Online Magazin</div>
+                    <h1 class="content__left-title">de produse electronice</h1>
+                    <div class="location">
+                      <a href="#!" class="location__info">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M17.5 8.33333C17.5 14.1667 10 19.1667 10 19.1667C10 19.1667 2.5 14.1667 2.5 8.33333C2.5 6.34421 3.29018 4.43656 4.6967 3.03003C6.10322 1.62351 8.01088 0.833333 10 0.833333C11.9891 0.833333 13.8968 1.62351 15.3033 3.03003C16.7098 4.43656 17.5 6.34421 17.5 8.33333Z"
+                            stroke="#111418"
+                            stroke-width="1.66667"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M10 10.8333C11.3807 10.8333 12.5 9.71405 12.5 8.33333C12.5 6.95262 11.3807 5.83333 10 5.83333C8.61929 5.83333 7.5 6.95262 7.5 8.33333C7.5 9.71405 8.61929 10.8333 10 10.8333Z"
+                            stroke="#111418"
+                            stroke-width="1.66667"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        în Moldova</a
+                      >
+                    </div>
+                    <a class="mousewheel" href="#!">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          x="4"
+                          y="1"
+                          width="12"
+                          height="18"
+                          rx="6"
+                          stroke="white"
+                          stroke-width="1.67"
+                        />
+                        <path
+                          d="M10 6V9"
+                          stroke="white"
+                          stroke-width="1.67"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                      Deruleaza in jos
+                    </a>
+                  </div>
+                  <div class="content__right">
+                    <div class="iphone__image google-pixel">
+                      <img
+                        src="../img/google-pixel.svg"
+                        alt="google pixel 4a"
+                        width="240"
+                        height="490"
+                      />
+                    </div>
+                    <div class="block">
+                      <div class="block__header">
+                        <div class="block__header-title">Google Pixel 4A</div>
+                      </div>
+                      <div class="block__middle">
+                        <div class="left-content">
+                          <div class="display">Display</div>
+                          <div class="display__info">6.1" OLED</div>
+                          <div class="memorie">Memorie internă</div>
+                          <div class="memorie__info">128 GB</div>
+                        </div>
+                        <div class="right-content">
+                          <div class="refresh">Refresh rate</div>
+                          <div class="refresh__info">120 Hz</div>
+                          <div class="ram">RAM</div>
+                          <div class="ram__info">6 GB</div>
+                        </div>
+                      </div>
+                      <div class="block__footer">
+                        <div class="block__footer-actions">
+                          <a href="#!" class="btn-fill">
+                            <img
+                              src="../img/shopping-bag.svg"
+                              alt="shopping-bag"
+                            />
+                            Cumpără acum
+                          </a>
+                        </div>
+                        <div class="block__footer-actions">
+                          <a href="#!" class="btn-outline">
+                            Află mai multe
+                            <img
+                              src="../img/arrow-right.svg"
+                              alt="arrow-right"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <div class="content__left">
+                    <div class="content__left-subtitle">Online Magazin</div>
+                    <h1 class="content__left-title">de produse electronice</h1>
+                    <div class="location">
+                      <a href="#!" class="location__info">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M17.5 8.33333C17.5 14.1667 10 19.1667 10 19.1667C10 19.1667 2.5 14.1667 2.5 8.33333C2.5 6.34421 3.29018 4.43656 4.6967 3.03003C6.10322 1.62351 8.01088 0.833333 10 0.833333C11.9891 0.833333 13.8968 1.62351 15.3033 3.03003C16.7098 4.43656 17.5 6.34421 17.5 8.33333Z"
+                            stroke="#111418"
+                            stroke-width="1.66667"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M10 10.8333C11.3807 10.8333 12.5 9.71405 12.5 8.33333C12.5 6.95262 11.3807 5.83333 10 5.83333C8.61929 5.83333 7.5 6.95262 7.5 8.33333C7.5 9.71405 8.61929 10.8333 10 10.8333Z"
+                            stroke="#111418"
+                            stroke-width="1.66667"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        în Moldova</a
+                      >
+                    </div>
+                    <a class="mousewheel" href="#!">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          x="4"
+                          y="1"
+                          width="12"
+                          height="18"
+                          rx="6"
+                          stroke="white"
+                          stroke-width="1.67"
+                        />
+                        <path
+                          d="M10 6V9"
+                          stroke="white"
+                          stroke-width="1.67"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                      Deruleaza in jos
+                    </a>
+                  </div>
+                  <div class="content__right">
+                    <div class="iphone__image google-pixel">
+                      <img
+                        src="../img/oneplus-8-pro.svg"
+                        alt="oneplus-8-pro"
+                        width="240"
+                        height="490"
+                      />
+                    </div>
+                    <div class="block">
+                      <div class="block__header">
+                        <div class="block__header-title">OnePlus 8 Pro</div>
+                      </div>
+                      <div class="block__middle">
+                        <div class="left-content">
+                          <div class="display">Display</div>
+                          <div class="display__info">6.1" OLED</div>
+                          <div class="memorie">Memorie internă</div>
+                          <div class="memorie__info">128 GB</div>
+                        </div>
+                        <div class="right-content">
+                          <div class="refresh">Refresh rate</div>
+                          <div class="refresh__info">120 Hz</div>
+                          <div class="ram">RAM</div>
+                          <div class="ram__info">6 GB</div>
+                        </div>
+                      </div>
+                      <div class="block__footer">
+                        <div class="block__footer-actions">
+                          <a href="#!" class="btn-fill">
+                            <img
+                              src="../img/shopping-bag.svg"
+                              alt="shopping-bag"
+                            />
+                            Cumpără acum
+                          </a>
+                        </div>
+                        <div class="block__footer-actions">
+                          <a href="#!" class="btn-outline">
+                            Află mai multe
+                            <img
+                              src="../img/arrow-right.svg"
+                              alt="arrow-right"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <div class="content__left">
+                    <div class="content__left-subtitle">Online Magazin</div>
+                    <h1 class="content__left-title">de produse electronice</h1>
+                    <div class="location">
+                      <a href="#!" class="location__info">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M17.5 8.33333C17.5 14.1667 10 19.1667 10 19.1667C10 19.1667 2.5 14.1667 2.5 8.33333C2.5 6.34421 3.29018 4.43656 4.6967 3.03003C6.10322 1.62351 8.01088 0.833333 10 0.833333C11.9891 0.833333 13.8968 1.62351 15.3033 3.03003C16.7098 4.43656 17.5 6.34421 17.5 8.33333Z"
+                            stroke="#111418"
+                            stroke-width="1.66667"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M10 10.8333C11.3807 10.8333 12.5 9.71405 12.5 8.33333C12.5 6.95262 11.3807 5.83333 10 5.83333C8.61929 5.83333 7.5 6.95262 7.5 8.33333C7.5 9.71405 8.61929 10.8333 10 10.8333Z"
+                            stroke="#111418"
+                            stroke-width="1.66667"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        în Moldova</a
+                      >
+                    </div>
+                    <a class="mousewheel" href="#!">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          x="4"
+                          y="1"
+                          width="12"
+                          height="18"
+                          rx="6"
+                          stroke="white"
+                          stroke-width="1.67"
+                        />
+                        <path
+                          d="M10 6V9"
+                          stroke="white"
+                          stroke-width="1.67"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                      Deruleaza in jos
+                    </a>
+                  </div>
+                  <div class="content__right">
+                    <div class="iphone__image google-pixel">
+                      <img
+                        src="../img/samsung-a50.svg"
+                        alt="samsung galaxy a50"
+                        width="240"
+                        height="490"
+                      />
+                    </div>
+                    <div class="block">
+                      <div class="block__header">
+                        <div class="block__header-title">
+                          Samsung Galaxy A50
+                        </div>
+                      </div>
+                      <div class="block__middle">
+                        <div class="left-content">
+                          <div class="display">Display</div>
+                          <div class="display__info">6.1" OLED</div>
+                          <div class="memorie">Memorie internă</div>
+                          <div class="memorie__info">128 GB</div>
+                        </div>
+                        <div class="right-content">
+                          <div class="refresh">Refresh rate</div>
+                          <div class="refresh__info">120 Hz</div>
+                          <div class="ram">RAM</div>
+                          <div class="ram__info">6 GB</div>
+                        </div>
+                      </div>
+                      <div class="block__footer">
+                        <div class="block__footer-actions">
+                          <a href="#!" class="btn-fill">
+                            <img
+                              src="../img/shopping-bag.svg"
+                              alt="shopping-bag"
+                            />
+                            Cumpără acum
+                          </a>
+                        </div>
+                        <div class="block__footer-actions">
+                          <a href="#!" class="btn-outline">
+                            Află mai multe
+                            <img
+                              src="../img/arrow-right.svg"
+                              alt="arrow-right"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+      <div class="gradient-01"></div>
+      <div class="gradient-02"></div>
+      <div class="section__produce">
+        <div class="container">
+          <div class="produce">
+            <div class="produce__title">
+              <h1>Produse Recomandate</h1>
+            </div>
+            <div class="produce__counter">01/04</div>
+          </div>
+          <div class="cards-wrapper">
+            <div class="cards">
+              <div class="location__card">
+                <a href="#!" class="location__card_info"> Best Price</a>
+              </div>
+              <div class="cards__img">
+                <img
+                  class="iphone-12"
+                  src="./img/card-iphone.png"
+                  alt="google pixel 4a"
+                />
+              </div>
+              <div class="cards__title">Apple iPhone 12 Mini</div>
+              <div class="cards__info">4 ГБ/ 256 ГБ Midnight</div>
+              <div class="cards__bottom">
+                <div class="price">
+                  <div class="cards__sale">23499 lei</div>
+                  <div class="cards__price">21 999 lei</div>
+                </div>
+                <div class="shopping-bag--img">
+                  <img src="/img/shopping-bag.svg" alt="shopping bag" />
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="cards__img">
+                <img src="./img/card-pixel.png" alt="google pixel 4a" />
+              </div>
+              <div class="cards__title">Apple iPhone 12 Mini</div>
+              <div class="cards__info">4 ГБ/ 256 ГБ Midnight</div>
+              <div class="cards__bottom">
+                <div class="price">
+                  <div class="cards__sale">23499 lei</div>
+                  <div class="cards__price">21 999 lei</div>
+                </div>
+                <div class="shopping-bag--img">
+                  <img src="/img/shopping-bag.svg" alt="shopping bag" />
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="cards__img">
+                <img src="./img/card-oneplus.png" alt="oneplus 8 pro" />
+              </div>
+              <div class="cards__title">Apple iPhone 12 Mini</div>
+              <div class="cards__info">4 ГБ/ 256 ГБ Midnight</div>
+              <div class="cards__bottom">
+                <div class="price">
+                  <div class="cards__sale">23499 lei</div>
+                  <div class="cards__price">21 999 lei</div>
+                </div>
+                <div class="shopping-bag--img">
+                  <img src="/img/shopping-bag.svg" alt="shopping bag" />
+                </div>
+              </div>
+            </div>
+            <div class="cards cards-samsung">
+              <div class="location__card">
+                <a href="#!" class="location__card_info"> Best Price</a>
+              </div>
+              <div class="cards__img">
+                <img src="./img/card-samsung.png" alt="samsung galaxe a50" />
+              </div>
+              <div class="cards__title">Apple iPhone 12 Mini</div>
+              <div class="cards__info">4 ГБ/ 256 ГБ Midnight</div>
+              <div class="cards__bottom">
+                <div class="price">
+                  <div class="cards__sale">23499 lei</div>
+                  <div class="cards__price">21 999 lei</div>
+                </div>
+                <div class="shopping-bag--img">
+                  <img src="/img/shopping-bag.svg" alt="shopping bag" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section__service">
+        <div class="container">
+          <div class="service__wrapper">
+            <div class="service">
+              <div class="serivice__cards">
+                <div class="service__info">
+                  <div class="service__title">Până la 2 ani de garanție</div>
+                  <div class="service__subtitle">
+                    Lucrul meșterului e gratuit, piesele sunt gratuite.
+                    <div class="service__icon">
+                      <img src="/img/shield.svg" alt="shield" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="service">
+              <div class="serivice__cards">
+                <div class="service__info">
+                  <div class="service__title">Până la 2 ani de garanție</div>
+                  <div class="service__subtitle">
+                    Lucrul meșterului e gratuit, piesele sunt gratuite.
+                    <div class="service__icon">
+                      <img src="/img/truck.svg" alt="truck icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="service">
+              <div class="serivice__cards">
+                <div class="service__info">
+                  <div class="service__title">Până la 2 ani de garanție</div>
+                  <div class="service__subtitle">
+                    Lucrul meșterului e gratuit, piesele sunt gratuite.
+                    <div class="service__icon">
+                      <img src="/img/tag.svg" alt="tag icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="service">
+              <div class="serivice__cards">
+                <div class="service__info">
+                  <div class="service__title">Până la 2 ani de garanție</div>
+                  <div class="service__subtitle">
+                    Lucrul meșterului e gratuit, piesele sunt gratuite.
+                    <div class="service__icon">
+                      <img src="/img/award.svg" alt="award icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section__news">
+        <div class="container">
+          <div class="news">
+            <div class="news__block_01">
+              <div class="news__content">
+                <div class="news__block_header">
+                  <img
+                    src="/img/news-01.png"
+                    alt="news img"
+                    width="300"
+                    height="385"
+                  />
+                </div>
+                <div class="news__block_bottom">
+                  <div class="news__block_date">24 Jul 2022</div>
+                  <div class="news__block_title">
+                    Diam venenatis amet molestie vestibulum vitae id ut lacinia
+                    eu.
+                  </div>
+                  <div class="news__block_subtitle">
+                    Nunc justo, eget condimentum in pulvinar nibh. Tempus ipsum
+                    sapien sit pulvinar habitasse sagittis, consectetur.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__block_02">
+              <div class="news__content-02">
+                <img
+                  src="/img/news-02.png"
+                  alt="news img"
+                  width="300"
+                  height="385"
+                />
+              </div>
+              <div class="news__block_bottom-02">
+                <div class="news__block_date-02">24 Jul 2022</div>
+                <div class="news__block_title-02">
+                  Malesuada neque, donec cursus ac vel phasellus vestibulum.
+                </div>
+                <div class="news__block_subtitle-02">
+                  Pharetra, lectus quisque sit sed fringilla dui libero. Magna
+                  eu ut feugiat vitae mauris non.
+                </div>
+              </div>
+            </div>
+            <div class="news__block_03">
+              <div class="news__content-03">
+                <div class="news__block_header-03">
+                  <img
+                    src="/img/news-03.png"
+                    alt="news img"
+                    width="300"
+                    height="385"
+                  />
+                </div>
+                <div class="news__block_bottom-03">
+                  <div class="news__block_date-03">24 Jul 2022</div>
+                  <div class="news__block_title-03">
+                    Egestas pharetra, fames est adipiscing.
+                  </div>
+                  <div class="news__block_subtitle-03">
+                    Aliquam ultrices nisl pharetra a ac eros. Molestie leo, cras
+                    in faucibus nisl, lacus sed.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="newsletter">
+              <div class="newsletter__content">
+                <h2 class="newsletter__title">
+                  Aboneaza-te la newsletter-ul nostru
+                </h2>
+                <div class="newsletter__subtitle">
+                  Doar cele mai utile știri.
+                </div>
+                <form method="post">
+                  <label for="email"></label>
+                  <input
+                    class="input"
+                    type="email"
+                    id="email"
+                    name="email"
+                    value=""
+                    placeholder="E-mail"
+                    required="required"
+                  />
+                  <button type="submit" class="form-button">
+                    <img
+                      class="send-icon"
+                      src="/img/send.svg"
+                      alt="message send icon"
+                      widht="20"
+                      height="20"
+                    />
+                    Abonati-va
+                  </button>
+                </form>
+                <div class="recaptcha">
+                  <p>
+                    Acest site este protejat de reCAPTCHA și se aplică Politica
+                    de confidențialitate și Termenii și condițiile Google.
+                  </p>
+                  <div class="show-more-btn">
+                    <a class="btn-outline" href="#!">Afișați mai multe</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__gradient--yellow"></div>
+        <div class="footer__gradient--blue"></div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="socials">
+            <div class="social__logo">
+              <a href="#!">
+                <svg
+                  width="72"
+                  height="72"
+                  viewBox="0 0 72 72"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M69.1875 58.302C68.8995 57.0795 68.466 55.875 67.809 54.783C66.5025 52.584 64.5105 50.9055 62.418 49.5495C60.3045 48.198 58.044 47.1135 55.731 46.221C51.3015 44.5095 51.516 44.5665 48.5265 43.5C41.9025 41.139 38.2245 37.629 37.9935 33.822C37.8825 31.9785 39.6825 25.971 47.1045 27.399C48.867 27.738 50.535 28.2135 52.1775 28.9545C53.691 29.6385 58.1085 31.7805 59.6565 34.83C59.7735 36.1755 60.2475 36.696 62.1405 37.59C63.564 38.262 65.001 38.9925 65.13 40.6485C65.1375 40.7385 65.2065 40.812 65.3265 40.83C65.4045 40.83 65.4765 40.7835 65.508 40.7085C65.781 40.05 66.8805 39.225 67.6995 39.45C67.794 39.474 67.878 39.4365 67.9215 39.3585C67.9665 39.2805 67.9515 39.1845 67.89 39.1215L66.5955 37.8405C66.129 37.3755 65.619 36.759 65.187 35.967C65.07 35.754 64.9695 35.544 64.881 35.3415C64.824 35.2005 64.767 35.061 64.71 34.92C63.624 32.0775 61.6005 29.0325 59.5125 27.06C58.3785 25.9695 57.1305 25.0095 55.8 24.1905C54.4635 23.3835 53.0715 22.6665 51.5505 22.2375L51.4395 22.6215C52.86 23.112 54.189 23.895 55.4325 24.75C56.6745 25.6185 57.822 26.6145 58.842 27.7185C60.2985 29.2665 61.446 31.0635 62.265 32.9865L59.2755 29.271L59.358 30.558L56.9085 27.7965L57.06 29.0895L54.681 27.171L54.885 28.047C54.3495 27.693 49.5975 25.803 47.226 24.912C44.8545 24.021 40.1685 19.626 41.52 14.064C41.52 14.064 39.3045 13.203 37.7175 12.6165C36.153 12.0525 34.5825 11.541 33.0075 11.0475C29.8575 10.0605 26.6895 9.1605 23.505 8.3205C20.3205 7.485 17.115 6.7275 13.8915 6.0585C10.6665 5.397 7.42349 4.8075 4.14149 4.479L4.08299 4.9785C7.31249 5.475 10.5 6.228 13.6635 7.0515C16.8255 7.884 19.9665 8.8005 23.082 9.795C26.196 10.7925 29.2905 11.85 32.3475 12.987C33.8745 13.5555 35.397 14.1405 36.888 14.769C37.2045 14.901 37.527 15.039 37.8495 15.177C36.0135 14.8155 34.1775 14.529 32.34 14.2905C29.0235 13.869 25.704 13.6035 22.3815 13.4535C19.0605 13.3035 15.7365 13.2795 12.4185 13.4025C9.10199 13.5315 5.78399 13.791 2.51099 14.352L2.57549 14.808C5.84549 14.472 9.13799 14.439 12.42 14.5335C15.7035 14.634 18.981 14.88 22.2405 15.249C25.4985 15.618 28.743 16.0995 31.944 16.728C33.918 17.1195 35.88 17.574 37.7985 18.1095C36.282 17.958 34.773 17.919 33.2775 17.937C30.312 17.982 27.3885 18.3075 24.5055 18.798C21.6225 19.293 18.7785 19.9575 15.993 20.817C13.2165 21.6855 10.4715 22.7175 7.95149 24.1905L8.12549 24.5025C10.7055 23.2605 13.4775 22.4655 16.2645 21.834C19.0575 21.213 21.891 20.787 24.7305 20.532C27.567 20.28 30.4185 20.196 33.225 20.3805C35.721 20.5455 38.2005 20.925 40.47 21.654C40.5675 22.3215 41.019 23.673 41.2365 24.348C34.854 27.2835 34.0455 32.5635 34.5675 35.3955C35.181 38.7165 37.584 41.2485 40.4235 42.888C42.774 44.2245 45.1755 45.0765 47.5125 45.9585C49.845 46.833 52.155 47.673 54.213 48.8355C56.241 49.956 57.927 51.687 59.2995 53.6505C62.055 57.6075 63.1575 62.5965 63.4875 67.518L64.035 67.503C64.047 62.5185 63.33 57.3 60.657 52.785C59.775 51.306 58.686 49.9035 57.4005 48.6855C58.8885 49.2615 60.342 49.9125 61.731 50.685C63.7905 51.8535 65.7315 53.3085 67.053 55.2615C67.719 56.232 68.1855 57.324 68.5275 58.461C68.8305 59.6115 68.97 60.8085 69.021 62.0175H69.489C69.5055 60.783 69.4365 59.535 69.1875 58.302Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="social__icons">
+              <a href="#!">
+                <img src="/img/facebook.svg" alt="facebook icon" />
+              </a>
+              <a href="#!">
+                <img src="/img/instagram.svg" alt="instagram icon" />
+              </a>
+              <a href="#!">
+                <img src="/img/youtube.svg" alt="youtube icon" />
+              </a>
+            </div>
+          </div>
+          <div class="footer__nav-wrapper">
+            <div class="footer__nav">
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a href="#!" class="footer__nav-link">Despre noi</a>
+                  <a href="#!" class="footer__nav-link">Produse</a>
+                  <a href="#!" class="footer__nav-link">Noutati</a>
+                  <a href="#!" class="footer__nav-link">Contacte</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav">
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a href="#!" class="footer__nav-link">Garanție si servicii</a>
+                  <a href="#!" class="footer__nav-link"
+                    >Politica de confidențialitate</a
+                  >
+                  <a href="#!" class="footer__nav-link"
+                    >Protecția consumatorilor</a
+                  >
+                  <a href="#!" class="footer__nav-link">Cookies</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__copyright">
+            <div class="copyright">© PC Store, 2022</div>
+            <div class="payment">
+              <div class="visa">
+                <img src="/img/visa.svg" alt="visa card icon" />
+              </div>
+              <div class="mastercard">
+                <img src="/img/mastercard.svg" alt="master card icon" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./js/scripts.min.js"></script>
+</html>
